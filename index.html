@@ -6,6 +6,11 @@
   <title>Accueil - Smoke Paradise</title>
   <meta name="description" content="Smoke Paradise - Votre boutique de chichas électroniques modernes au Bénin. Qualité, innovation et livraison rapide." />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <meta property="og:title" content="Smoke Paradise - Chichas électroniques" />
+<meta property="og:description" content="Découvrez les meilleures chichas électroniques au Bénin. Livraison rapide et prix imbattables." />
+<meta property="og:image" content="https://votre-site.onrender.com/logo-smoke.jpg" /> <!-- Créez un logo/ image de 1200x630px -->
+<meta property="og:url" content="https://votre-site.onrender.com" />
+<meta property="og:type" content="website" />
   <style>
     * {
       margin: 0;
@@ -205,6 +210,23 @@
       .btn-whatsapp, .btn-catalogue { display: block; text-align: center; }
     }
   </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Smoke Paradise",
+  "description": "Boutique de chichas électroniques modernes au Bénin. Vente et livraison rapide.",
+  "url": "https://votre-site.onrender.com",
+  "telephone": "+2290161631431",
+  "email": "nombaalbouchra71@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "BJ"
+  },
+  "openingHours": "Mo-Su 08:00-20:00",
+  "priceRange": "5000-90000"
+}
+</script>
 </head>
 <body>
 
@@ -312,11 +334,64 @@
       </a>
     </section>
   </main>
-
+<!-- Bouton Retour en haut -->
+<style>
+  #btnTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    display: none; /* Caché par défaut */
+    z-index: 999;
+    transition: 0.3s;
+  }
+  #btnTop:hover {
+    background: #1c5980;
+    transform: scale(1.1);
+  }
+</style>
+<button id="btnTop" title="Retour en haut">↑</button>
+<script>
+  window.onscroll = function() {
+    let btn = document.getElementById("btnTop");
+    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+  document.getElementById("btnTop").onclick = function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+</script>
+<section>
+  <h2>Ils nous font confiance</h2>
+  <div class="grid-avantages">
+    <div class="carte-avantage" style="text-align: left;">
+      <p style="font-style: italic;">"⭐⭐⭐⭐⭐ Livraison super rapide et la chicha est top !"</p>
+      <p style="font-weight: bold;">- Marc, Cotonou</p>
+    </div>
+    <div class="carte-avantage" style="text-align: left;">
+      <p style="font-style: italic;">"⭐⭐⭐⭐⭐ Le meilleur rapport qualité-prix au Bénin."</p>
+      <p style="font-weight: bold;">- Sarah, Porto-Novo</p>
+    </div>
+  </div>
+</section>
   <footer>
     Contact : <strong>+229 01 61 63 14 31</strong> | <strong>nombaalbouchra71@gmail.com</strong><br />
     © 2025 Smoke Paradise – Tous droits réservés
   </footer>
-
+<div id="cookieBanner" style="position: fixed; bottom: 0; left: 0; right: 0; background: #2c3e50; color: white; padding: 15px; text-align: center; z-index: 1000; display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap;">
+  <span>🍪 Nous utilisons des cookies pour améliorer votre expérience.</span>
+  <button onclick="document.getElementById('cookieBanner').style.display='none'" style="background: #2980b9; color: white; border: none; padding: 8px 30px; border-radius: 5px; font-weight: bold; cursor: pointer;">Accepter</button>
+</div>
 </body>
 </html>

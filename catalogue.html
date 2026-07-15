@@ -5,7 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Catalogue - Smoke Paradise</title>
   <meta name="description" content="Découvrez notre catalogue de chichas électroniques et accessoires. Des produits de qualité à tous les prix." />
-  <style>
+ <meta property="og:title" content="Smoke Paradise - Chichas électroniques" />
+<meta property="og:description" content="Découvrez les meilleures chichas électroniques au Bénin. Livraison rapide et prix imbattables." />
+<meta property="og:image" content="https://votre-site.onrender.com/logo-smoke.jpg" /> <!-- Créez un logo/ image de 1200x630px -->
+<meta property="og:url" content="https://votre-site.onrender.com" />
+<meta property="og:type" content="website" />
+ <style>
     * {
       margin: 0;
       padding: 0;
@@ -150,6 +155,23 @@
       .btn-commande { display: block; font-size: 0.8rem; padding: 8px; }
     }
   </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Smoke Paradise",
+  "description": "Boutique de chichas électroniques modernes au Bénin. Vente et livraison rapide.",
+  "url": "https://votre-site.onrender.com",
+  "telephone": "+2290161631431",
+  "email": "nombaalbouchra71@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "BJ"
+  },
+  "openingHours": "Mo-Su 08:00-20:00",
+  "priceRange": "5000-90000"
+}
+</script>
 </head>
 <body>
 
@@ -166,6 +188,23 @@
   </header>
 
   <main>
+    <div style="margin: 30px 0; text-align: center;">
+  <input type="text" id="searchBar" placeholder="🔍 Rechercher un produit..." style="padding: 12px 20px; width: 80%; max-width: 500px; border: 2px solid #2980b9; border-radius: 8px; font-size: 16px;">
+</div>
+<script>
+  document.getElementById('searchBar').addEventListener('keyup', function() {
+    let filter = this.value.toLowerCase();
+    let items = document.querySelectorAll('.produit');
+    items.forEach(function(item) {
+      let name = item.querySelector('h4').textContent.toLowerCase();
+      if (name.includes(filter)) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  });
+</script>
     <div class="catalogue-grid">
       <!-- Produit 1 -->
       <div class="produit">
@@ -337,7 +376,44 @@
       </div>
     </div>
   </main>
-
+<!-- Bouton Retour en haut -->
+<style>
+  #btnTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    display: none; /* Caché par défaut */
+    z-index: 999;
+    transition: 0.3s;
+  }
+  #btnTop:hover {
+    background: #1c5980;
+    transform: scale(1.1);
+  }
+</style>
+<button id="btnTop" title="Retour en haut">↑</button>
+<script>
+  window.onscroll = function() {
+    let btn = document.getElementById("btnTop");
+    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+  document.getElementById("btnTop").onclick = function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+</script>
   <footer>
     Contact : <strong>+229 01 61 63 14 31</strong> | <strong>nombaalbouchra71@gmail.com</strong><br />
     © 2025 Smoke Paradise – Tous droits réservés
