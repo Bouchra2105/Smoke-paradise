@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Smoke Paradise</title>
+  <meta name="description" content="Contactez Smoke Paradise pour toute question, commande ou assistance. Réponse rapide garantie." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: #f5f8fc;
+      color: #2c3e50;
+      line-height: 1.65;
+      font-size: 16px;
+    }
+    a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    nav {
+      background-color: #fff;
+      padding: 15px 25px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      font-weight: 600;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #2c3e50;
+      text-decoration: none;
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    nav a:hover {
+      color: #2980b9;
+      text-decoration: none;
+    }
+
+    header {
+      background: linear-gradient(135deg, #34495e, #2c3e50);
+      color: #ecf0f1;
+      padding: 50px 20px;
+      text-align: center;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    }
+    header h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      letter-spacing: 3px;
+    }
+    header p {
+      font-size: 1.1rem;
+      margin-top: 10px;
+      opacity: 0.9;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 25px 60px;
+    }
+
+    .contact-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 6px 15px rgba(41, 128, 185, 0.10);
+      text-align: center;
+      border: 1px solid #ecf0f1;
+    }
+    .contact-card h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #34495e;
+      border-bottom: 4px solid #2980b9;
+      display: inline-block;
+      padding-bottom: 8px;
+    }
+    .contact-card p {
+      font-size: 1.1rem;
+      margin: 15px 0;
+    }
+    .contact-card i {
+      color: #2980b9;
+      margin-right: 10px;
+      width: 28px;
+      text-align: center;
+    }
+    .contact-card a {
+      color: #2980b9;
+      font-weight: 600;
+    }
+    .contact-card a:hover {
+      text-decoration: underline;
+    }
+
+    .btn-whatsapp {
+      display: inline-block;
+      background: #25D366;
+      color: #fff;
+      padding: 16px 40px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(37, 211, 102, 0.30);
+      transition: background-color 0.3s ease, transform 0.2s;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+    .btn-whatsapp:hover {
+      background: #1ebe5d;
+      transform: scale(1.02);
+      text-decoration: none;
+    }
+
+    footer {
+      background: #2c3e50;
+      color: #ecf0f1;
+      text-align: center;
+      padding: 25px 20px;
+      font-size: 14px;
+      border-top: 4px solid #2980b9;
+    }
+    footer strong {
+      color: #2980b9;
+    }
+
+    @media (max-width: 768px) {
+      nav { gap: 15px; padding: 12px 15px; }
+      nav a { font-size: 13px; }
+      header h1 { font-size: 2rem; }
+      .contact-card { padding: 25px; }
+      .btn-whatsapp { display: block; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="a-propos.html">À propos</a>
+    <a href="catalogue.html">Catalogue</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <header>
+    <h1>Contact</h1>
+    <p>Besoin d'informations ou d'assistance ? Nous sommes là pour vous aider.</p>
+  </header>
+
+  <main>
+    <div class="contact-card">
+      <h2>Contactez-nous</h2>
+      <p style="margin-bottom:25px;">Une question, une commande ou un besoin d'assistance ? Notre équipe est à votre écoute.</p>
+
+      <p><i class="fas fa-phone"></i> <strong>+229 01 61 63 14 31</strong></p>
+      <p><i class="fas fa-envelope"></i> <strong>nombaalbouchra71@gmail.com</strong></p>
+      <p><i class="fab fa-whatsapp"></i> <strong>WhatsApp :</strong> <a href="https://wa.me/2290161631431" target="_blank">Cliquez ici pour nous écrire</a></p>
+
+      <br />
+      <a href="https://wa.me/2290161631431?text=Bonjour%2C%20je%20souhaite%20vous%20contacter%20concernant%20Smoke%20Paradise" target="_blank" class="btn-whatsapp">
+        <i class="fab fa-whatsapp"></i> Envoyer un message WhatsApp
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    Contact : <strong>+229 01 61 63 14 31</strong> | <strong>nombaalbouchra71@gmail.com</strong><br />
+    © 2025 Smoke Paradise – Tous droits réservés
+  </footer>
+
+</body>
+</html>
