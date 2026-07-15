@@ -1,1 +1,4 @@
-html
+User-agent: *
+Allow: /
+
+Sitemap: https://smoke-paradise.onrender.com/sitemap.xml
